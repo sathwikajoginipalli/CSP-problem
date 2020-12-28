@@ -1,0 +1,3 @@
+Constraint satisfaction problems (CSP) - Map Coloring
+
+A CSP is a problem composed of a finite set of variables each of which has a finite domain of values and a set of constraints. Each constraint is defined over some subset of the original set of variables and restricts the values these variables can simultaneously take. The task is to find an assignment of a value for each variable such that the assignments satisfy all the constraints In some problems the goal is to find all such assignments. Constraint satisfaction problems on finite domains are typically solved using a form of search. The most used techniques are variants of backtracking, constraint propagation, and local search.
