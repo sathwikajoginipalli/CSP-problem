@@ -3,6 +3,8 @@ Constraint satisfaction problems (CSP) - Map Coloring
 A CSP is a problem composed of a finite set of variables each of which has a finite domain of values and a set of constraints. Each constraint is defined over some subset of the original set of variables and restricts the values these variables can simultaneously take. The task is to find an assignment of a value for each variable such that the assignments satisfy all the constraints In some problems the goal is to find all such assignments. Constraint satisfaction problems on finite domains are typically solved using a form of search. The most used techniques are variants of backtracking, constraint propagation, and local search.
 
 
+The program needs to color both Australia and America maps with colors such that no two adjacent states have same color. I have written 6 programs for each country such that 3 programs are without any heuristic(DFS, DFS+Forward Checking, DFS+ Forward Checking+ propagation through Singleton domains) and another 3 programs with heuristic-MRV, Degree Constraint, and Least Constraining Value in the same order. 
+
 Program Content:
 DFS:
 The concept of backtracking is applied to map coloring, once any variables domain reaches 0 then the algorithm backtracks and checks other options in the domain which would yield a color for the one with the empty set in its domain. Every time the algorithm checks the next state only after reaching there, there are no prechecks done.
